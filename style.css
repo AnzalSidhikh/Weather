@@ -1,0 +1,86 @@
+body {
+    background-color: #91c4f7; /* Light background */
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.outer-div {
+    /* height: 600px;
+    width: 1300px; */
+    background-color: #ffffff; /* White background for the outer div */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.inner-div {
+    display: flex;
+    justify-content: space-between;
+    border: 25px solid white;
+    border-radius: 20px;
+
+}
+
+
+/* .image-container {
+    width: 48%;
+} */
+#div1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    justify-content: space-between;
+    height: 550px;
+    width: 75%;
+    background-color: black;
+    background-image: url(https://www.daysoftheyear.com/wp-content/uploads/hot-air-balloon-day2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#div2{
+    background-color: rgb(181, 246, 224);
+    height: 550px;
+    width: 75%;
+    padding: 40px;
+}
+
+.weatherDetails p {
+  padding: 0;
+  margin: 0;
+ 
+}
+#weatherDetailsA{
+    color: white;
+}
+
+.weatherDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+    /* Styles for phones */
+    .inner-div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px;
+    
+    }
+    #div1,#div2{
+        width: 100%;
+
+    }
+
+  }
