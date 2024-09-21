@@ -64,7 +64,7 @@
                         type: 'GET',
                         url: 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=metric&appid=adf43cf69811e4ad31f4788690e411c1',
                         success: function(weatherResponse) {
-                            if(weatherResponse.main.temp<0){
+                            if(weatherResponse.main.temp<15){
                                 $("#div1").css({"background-image": "url(https://t3.ftcdn.net/jpg/02/98/03/22/360_F_298032209_YD4pFLDyzMyqBzso5xF5USR05hxqGuXf.jpg)"});
                             }
                             else if(weatherResponse.main.temp<25){
